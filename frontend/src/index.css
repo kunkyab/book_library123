@@ -1,40 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.heading {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Align items vertically in the center */
-}
-
-.addButton {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-
-
+/* index.css */
 .overlay {
   position: fixed;
   top: 0;
@@ -76,6 +40,44 @@ body {
   font-size: 16px;
 }
 
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Align items vertically in the center */
+}
+
+.addButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
 .error {
   color: red;
   font-size: 12px;
@@ -83,22 +85,32 @@ body {
 }
 
 .bookListContainer {
-  border: 1px solid #ddd; /* Add border */
+  border: 1px solid #572323; /* Add border */
   border-radius: 8px; /* Add border radius */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
   padding: 20px; /* Add padding */
   width: 100%; /* Set width to 100% */
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 40px;
 }
 
 .bookItem {
-  margin-bottom: 20px; /* Add margin between book items */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  margin-right:20px;
+  border: 1px solid #ddd; /* Add border */
+  border-radius: 8px; /* Add border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  padding: 20px; /* Add padding */
+  width: 20%; /* Set width to 100% */ /* Add margin between book items */
 }
 
-.deleteButton {
-  background-color: red;
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.bookName:hover{
+ cursor: pointer;
+ color: #774444;
 }

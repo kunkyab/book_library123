@@ -1,8 +1,8 @@
+// redux/actions.js
 export const ADD_BOOK = 'ADD_BOOK';
 export const DELETE_BOOK = 'DELETE_BOOK';
 export const EDIT_BOOK = 'EDIT_BOOK';
 
-// Action creators
 export const addBook = book => ({
   type: ADD_BOOK,
   payload: book,
@@ -13,7 +13,7 @@ export const deleteBook = id => ({
   payload: id,
 });
 
-export const editBook = book => ({
+export const editBook = (id, updatedBook) => ({
   type: EDIT_BOOK,
-  payload: book,
+  payload: { id, updatedBook },
 });

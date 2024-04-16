@@ -1,17 +1,14 @@
 // components/Bookstore.js
-
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 import BookList from './BookList';
-import AddBookPopup from './AddBookPopup';
+import AddBookPopup from './AddBookPopup'; // import the AddBookPopup component
 
 const Bookstore = () => {
-  const [isAddBookPopupOpen, setAddBookPopupOpen] = useState(false);
+  const [isAddBookPopupOpen, setAddBookPopupOpen] = useState(false); // state to track if add book popup is open
 
   const toggleAddBookPopup = () => {
     setAddBookPopupOpen(!isAddBookPopupOpen);
   };
-
   const closeAddBookPopup = () => {
     setAddBookPopupOpen(false);
   };
@@ -20,8 +17,9 @@ const Bookstore = () => {
     <div className="container">
       <h1 className="heading">Bookstore</h1>
       <div className="content">
+      <button onClick={toggleAddBookPopup} className="addButton">Add Book</button>
         <BookList />
-        <button onClick={toggleAddBookPopup} className="addButton">Add Book</button>
+        
       </div>
       {isAddBookPopupOpen && <AddBookPopup onClose={closeAddBookPopup} />}
     </div>

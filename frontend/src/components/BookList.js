@@ -20,8 +20,8 @@ const BookList = () => {
   return (
     <div className="bookListContainer">
       {books.map(book => (
-        <div key={book.id} className="bookItem" onClick={() => handleEdit(book)}> {/* Add onClick event handler */}
-          <h3>{book.name}</h3>
+        <div key={book.id} className="bookItem" > {/* Add onClick event handler */}
+          <h3 className='bookName' onClick={() => handleEdit(book)}>{book.name}</h3>
           <p>Price: ${book.price}</p>
           <p>Category: {book.category}</p>
           <p>Description: {book.description}</p>
