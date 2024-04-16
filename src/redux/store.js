@@ -4,8 +4,8 @@ import rootReducer from './reducers';
 
 // Add some initial books
 const initialBooks = [
-  { id: 1, name: 'Book 1', price: 10, category: 'Fiction', description: 'Description for Book 1' },
-  { id: 2, name: 'Book 2', price: 15, category: 'Non-fiction', description: 'Description for Book 2' },
+  { id: 1, name: 'Noble Beginnings', price: 32.50, category: 'Fiction', description: 'In March of 2002, while the eyes of the world focused on Afghanistan,' },
+  { id: 2, name: 'A Deadly Distance', price: 67, category: 'Non-fiction', description: 'Washington, D.C. Midday. A man waits at a bus stop, ' },
   // Add more books if needed
 ];
 
