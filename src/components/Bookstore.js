@@ -4,10 +4,10 @@ import BookList from './BookList';
 import AddBookPopup from './AddBookPopup'; // import the AddBookPopup component
 
 const Bookstore = () => {
-  const [isAddBookPopupOpen, setAddBookPopupOpen] = useState(false); // state to track if add book popup is open
+  const [AddBookPopupOpen, setAddBookPopupOpen] = useState(false); // state to track if add book popup is open
 
   const toggleAddBookPopup = () => {
-    setAddBookPopupOpen(!isAddBookPopupOpen);
+    setAddBookPopupOpen(!AddBookPopupOpen);
   };
   const closeAddBookPopup = () => {
     setAddBookPopupOpen(false);
@@ -21,7 +21,7 @@ const Bookstore = () => {
         <BookList />
         
       </div>
-      {isAddBookPopupOpen && <AddBookPopup onClose={closeAddBookPopup} />}
+      {AddBookPopupOpen && <AddBookPopup onClose={closeAddBookPopup} />}
     </div>
   );
 };
